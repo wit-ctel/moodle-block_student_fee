@@ -25,4 +25,4 @@
 
 $plugin->component = 'block_student_fee';
 $plugin->version = 2016032900;
-$plugin->requires = 2015051104;
+$plugin->requires = 2016052300;
