@@ -81,7 +81,7 @@ class block_student_fee extends block_base {
      * @return array
      */
     public function applicable_formats() {
-        return array('my' => true);
+        return array('all' => true);
     }
     
     /**
