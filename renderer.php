@@ -33,7 +33,10 @@ defined('MOODLE_INTERNAL') || die();
 
 class block_student_fee_renderer extends plugin_renderer_base {
     
-    public function display_balance($balance, $overduenotice){
+    public function display_balance($balance, $overduenotice) {
+        
+        if ($balance <= 0)
+            return "";
         
         $template = new stdClass();
         $template->balance = $this->format_balance_for_output($balance);
